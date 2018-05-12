@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FriendFinder</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <h3 class="card-header">About You</h3>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="userName">Your Name</label>
+                                <input type="name" class="form-control" id="userName" placeholder="Name">
+                            <br>
+                            <label for="userPhoto">Image Link</label>
+                                <input type="link" class="form-control" id="userPhoto" placeholder="Link to your photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <h3 class="card-header">Survey</h3>
+                    <div class="card-body">
+                            <h4>Question 1</h4>
+                                <p>I enjoy outdoor activities like hiking or kayaking.</p>
+                            <select id="question1">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h4>Question 2</h4>
+                                <p>I love travelling.</p>
+                            <select id="question2">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <br>
+                            <br>
+                            <h4>Question 3</h4>
+                                <p>I would say I have a high level of emotional intelligence.</p>
+                            <select id="question3">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select> 
+                            <br>  
+                            <br>
+                            <h4>Question 4</h4>
+                                <p>My taste in music includes a wide variety of genres.</p>
+                            <select id="question4">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select> 
+                            <br>  
+                            <br>
+                            <h4>Question 5</h4>
+                                <p>It is easy for me to sympathize/empathize with others' hardships.</p>
+                            <select id="question5">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select> 
+                            <br>  
+                            <br>
+                            <h4>Question 6</h4>
+                                <p>Eating healthy and exercising are important to me.</p>
+                            <select id="question6">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select> 
+                            <br>  
+                            <br>
+                            <h4>Question 7</h4>
+                                <p>Physical appearance matters.</p>
+                            <select id="question7">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select> 
+                            <br>  
+                            <br>
+                            <h4>Question 8</h4>
+                                <p>When someone is in a very fortunate position, they have an ethical obligation to help those less fortunate.</p>
+                            <select id="question8">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select> 
+                            <br>  
+                            <br>
+                            <h4>Question 9</h4>
+                                <p>My political views are more left-leaning than right-leaning.</p>
+                            <select id="question9">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select> 
+                            <br>  
+                            <br>
+                            <h4>Question 10</h4>
+                                <p>I can easily discuss personal aspects of my life with others.</p>
+                            <select id="question10">
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select> 
+                            <br>  
+                            <br>
+                            <center>
+                                <button type="button" class="btn btn-danger" id="submit">Submit</button>
+                            </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="friendModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Results</h5>
+                  <button type="button" class="close" id="closeButton" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <p>Hello, <span id="userNameModal"></span>. Looking good! 
+                    <br>
+                    <span id="userPhotoModal"></span></p>
+                  <p>Here's your score: <span id="userScore"></span></p>  
+                  <p>Your friend match: <span id="friendResult"></span></p>
+                  <br>
+                  <p><span id="tob"></span></p>
+                  <p><span id="lyd"></span></p>
+                  <p><span id="kel"></span></p>
+                  <p><span id="rob"></span></p>
+                  <p><span id="sop"></span></p>
+                  <span id="friendPhoto"></span>
+                </div>
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+<script type="text/javascript" src="../app/data/friends.js"></script>
+<script type="text/javascript">
+console.log(friendsArray[0].name);
+function getSum(total, num) {
+    return total + num;
+}
+
+var tobiScore = (friendsArray[0].scores).reduce(getSum); // Tobi
+var lydiaScore = (friendsArray[1].scores).reduce(getSum); // Lydia
+var kellyScore = (friendsArray[2].scores).reduce(getSum); // Kelly
+var robertScore = (friendsArray[3].scores).reduce(getSum); // Robert
+var sophieanneScore = (friendsArray[4].scores).reduce(getSum); // Sophie-Anne
+
+// $("#tob").text(tobiScore); // 29
+// $("#lyd").text(lydiaScore); // 23
+// $("#kel").text(kellyScore); // 37
+// $("#rob").text(robertScore); // 19
+// $("#sop").text(sophieanneScore); // 44
+$(document).ready(function()    {
+    $("#submit").click(function()   {
+        $("#friendPhoto").empty();
+        var theirName = $("#userName").val().trim();
+        var theirPhoto = $("#userPhoto").val().trim();
+        // console.log(theirName);
+        $("#friendModal").show();
+        $("#userNameModal").text(theirName);
+        $("#userPhotoModal").html(theirPhoto);
+        $("#friendResult").text(friendsArray.name);
+        var theirScore = 
+            [
+            Number ($("#question1").val()),
+            Number ($("#question2").val()),
+            Number ($("#question3").val()),
+            Number ($("#question4").val()),
+            Number ($("#question5").val()),
+            Number ($("#question6").val()),
+            Number ($("#question7").val()),
+            Number ($("#question8").val()),
+            Number ($("#question9").val()),
+            Number ($("#question10").val())
+        ];
+
+        function getSum(total, num) {
+            return total + num;
+        }
+
+        var theScore = theirScore.reduce(getSum);
+        $("#userScore").text(theScore);
+
+        if (theScore >= 10 && theScore <= 19)   {
+            $("#friendResult").text(friendsArray[3].name);
+            $("#friendPhoto").append("<img src='images/Robert.jpg'/>");
+        }
+
+        if(theScore >= 20 && theScore <= 23)    {
+            $("#friendResult").text(friendsArray[1].name);
+            $("#friendPhoto").append("<img src='images/Lydia.jpg'/>");
+        }
+
+        if(theScore >= 24 && theScore <= 29)    {
+            $("#friendResult").text(friendsArray[0].name);
+            $("#friendPhoto").append("<img src='images/Tobi.jpg'/>");
+        }
+
+        if(theScore >= 30 && theScore <= 37)    {
+            $("#friendResult").text(friendsArray[2].name);
+            $("#friendPhoto").append("<img src='images/Kelly.jpg'/>");
+        }
+
+        if(theScore >= 37 && theScore <= 50)    {
+            $("#friendResult").text(friendsArray[4].name);
+            $("#friendPhoto").append("<img src='images/Sophie-Anne.jpg'/>");
+        }
+    });
+    $("#closeButton").click(function()  {
+        $("#friendModal").hide();
+        $("#friendPhoto").empty();
+    })
+})
+</script>
+</body>
+</html>
